@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/notesHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Notes."
+        android:textStyle="bold"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/Primary"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/notesHeading"
+        android:textStyle="bold"
+        android:textColor="@color/Primary"
+        android:textSize="18sp"
+        android:layout_marginStart="18dp"
+        android:text="Nama: Ahamad Akmal Fauzan">
+    </TextView>
+
+    <TextView
+        android:id="@+id/kelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/nama"
+        android:textStyle="bold"
+        android:textColor="@color/Primary"
+        android:textSize="18sp"
+        android:layout_marginStart="18dp"
+        android:text="Kelas: XI RPL 2">
+
+    </TextView>
+    <TextView
+        android:id="@+id/absen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/kelas"
+        android:textStyle="bold"
+        android:textColor="@color/Primary"
+        android:textSize="18sp"
+        android:layout_marginStart="18dp"
+        android:text="No Absen: 2">
+
+    </TextView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/Primary"
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclearView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:layout_below="@+id/absen"
+        />
+
+
+</RelativeLayout>
